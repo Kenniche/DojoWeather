@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <!--<div class="container"></div>-->
+    <!-- Nav bar -->
+        <div class="nav">
+            <div class="nav-text">
+                <h1 class="nav-title">DojoWeather</h1>
+                <ul class="nav-links">
+                    <li onclick="changingCity()">Burbank</li>
+                    <li onclick="changingCity()">Chicago</li>
+                    <li onclick="changingCity()">Dallas</li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Content below nav -->
+    <div class="container">
+        <div class="city">
+            <h2 class="cityName">San José</h2>
+            <p class="temp-choice">show temperature in
+                <select name="unit" id="unit" onchange="changeUnit(this)" class="temp-dropdown">
+                    <option value="celsius">°C</option>
+                    <option value="farenheit">°F</option>
+                </select>
+            </p>
+        </div>
+    <!-- Main-->
+    <div class="days-container">
+        <div class="days-col">
+            <h3 class="day"> Today </h3>
+            <img class="imag" src="./assets/some_rain.png" alt="Some Rain">
+            <p class="forecast"> some rain </p>
+            <div class="temp">
+                <h3 class="degrees" id="high">24</h3>
+                <h3 class="degrees">18</h3>
+            <!--<span class="high" class= "degrees" > 24</span>
+            <span class="low" class= "degrees" > 18 </span>
+            -->
+            </div>
+        </div>
+        <div class="days-col">
+            <h3 class="day"> Tomorrow </h3>
+            <img class="imag" src="./assets/some_sun.png" alt="Some Rain">
+            <p class="forecast"> some sun </p>
+            <div class="temp">
+            <h3 class="degrees" id="high" >27</h3> 
+            <h3 class="degrees" >19</h3> 
+            <!--<span class="high" class= "degrees" > 27</span>
+            <span class="low" class= "degrees" > 19 </span>
+            -->
+            </div>
+        </div>
+        <div class="days-col">
+            <h3 class="day"> Friday </h3>
+            <img class="imag" src="./assets/some_clouds.png" alt="Some Rain">
+            <p class="forecast"> some clouds </p>
+            <div class="temp">
+                <h3 class="degrees" id="high">21</h3>
+                <h3 class="degrees" >16</h3> 
+            <!--<span class="high" class= "degrees">21</span>
+            <span class="low" class= "degrees">16</span>
+            -->
+            </div>
+        </div>
+        <div class="days-col">
+            <h3 class="day"> Saturday </h3>
+            <img class="imag" src="./assets/some_sun.png" alt="Some Rain">
+            <p class="forecast"> some sun </p>
+            <div class="temp">
+                <h3 class="degrees" id="high" >26</h3>
+                <h3 class="degrees" >21</h3>
+            <!--<span class="high" class="degrees">26</span>
+            <span class="low" class="degrees">21</span>
+            -->
+        </div>
+        </div>
+    </div>
+        <!-- Cookie Box-->
+        <div class="cookie-alert">
+            <img src="./assets/cookie.png" alt="cookie picture">
+            <div class="cookie-text-container">
+                <h4 class="cookie-heading">Stop! Cookie time</h4>
+                <p class="cookie-text">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            
+            <button onclick="cookieRemove(this)">I Accept</button>
+            
+            <!--<button onclick="acceptCookie(this)">I Accept</button> -->
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
